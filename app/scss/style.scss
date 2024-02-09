@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'libs';
+@import 'mixin';
+@import 'global';
+
+@import "components/menu-btn";
+@import "components/btn";
+@import "components/input";
+@import "components/title";
+@import "components/header";
+@import "components/footer";
+@import "components/card";
+
+@import "home/innovation";
+@import "home/features";
+@import "home/testimonials";
+@import "home/beta";

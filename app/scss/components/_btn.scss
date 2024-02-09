@@ -1,0 +1,39 @@
+.btn {
+  font-family: $inter;
+  display: inline-block;
+  max-width: max-content;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $black;
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 16px 32px;
+  background-color: $white;
+  border: 1px solid transparent;
+  letter-spacing: -0.14px;
+  transition: background-color .4s, border .4s, color .4s, opacity .4s;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $black;
+  }
+
+  &:focus {
+    opacity: .5;
+  }
+
+  &--gray {
+    background-color: $white10;
+  }
+
+  &--green {
+    background-color: $accent;
+    color: $white;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $accent;
+      color: $black;
+    }
+  }
+}

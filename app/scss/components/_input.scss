@@ -1,0 +1,25 @@
+.input {
+  border-radius: 40px;
+  padding: 16px;
+  background-color: $white10;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  letter-spacing: -0.14px;
+  height: 100%;
+  border: 1px solid transparent;
+  transition: border .4s, background-color .4s;
+
+  &:hover {
+    background-color: $white15;
+  }
+
+  &:focus {
+    border-color: $accent;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    color: rgba($black, .4);
+  }
+}

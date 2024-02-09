@@ -1,0 +1,59 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$url}.woff2') format("woff2"),
+    url('../fonts/#{$url}.woff') format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@include font-face(Inter, Inter-Regular, 400);
+@include font-face(Inter, Inter-Medium, 500);
+@include font-face(SFProDisplay, SFProDisplay-Regular, 400);
+
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('../fonts/AeonikPro-Regular.woff2') format('woff2'),
+  url('../fonts/AeonikPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('../fonts/AeonikPro-Medium.woff2') format('woff2'),
+  url('../fonts/AeonikPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('../fonts/AeonikPro-Bold.woff2') format('woff2'),
+  url('../fonts/AeonikPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bernard MT Condensed';
+  src: url('../fonts/BernardMT-Condensed.woff2') format('woff2'),
+  url('../fonts/BernardMT-Condensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Britannic';
+  src: url('../fonts/BritannicBold.woff2') format('woff2'),
+  url('../fonts/BritannicBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,13 @@
+.footer {
+  &__contacts {
+    display: flex;
+    gap: 11px;
+    max-width: 611px;
+  }
+
+  &__contact {
+    border-radius: 16px;
+    padding: 24px;
+    background-color: $white;
+  }
+}

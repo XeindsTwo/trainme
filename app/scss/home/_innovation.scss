@@ -1,0 +1,15 @@
+.innovation {
+  &__title {
+    max-width: 703px;
+  }
+
+  &__list {
+    @include flex-column(16);
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+}
