@@ -6,6 +6,7 @@
   box-shadow: 0 40px 186.2px 0 rgba(23, 43, 27, 0.13);
   color: $white;
   position: relative;
+  overflow: hidden;
 
   &__container {
     position: relative;
@@ -88,6 +89,10 @@
     position: absolute;
     right: 60px;
     top: 330px;
+
+    p {
+      color: rgba($white, .8);
+    }
   }
 
   &__images {
@@ -102,8 +107,32 @@
   }
 
   &__img {
+    position: relative;
+
+    &--one {
+      top: -237px;
+    }
+
     &--two {
-      margin-left: 60px;
+      margin-left: 276px;
+      bottom: -150px;
+    }
+
+    &--three {
+      margin-left: 112px;
+      top: -30px;
+    }
+
+    &--four {
+      right: 190px;
+      top: -76px;
+      position: absolute;
+    }
+
+    &--five {
+      position: absolute;
+      right: -110px;
+      top: -210px;
     }
   }
 
@@ -112,5 +141,16 @@
       border-color: $white;
       color: $white;
     }
+  }
+
+  &__decor {
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.images {
+  &__header {
+    position: relative;
   }
 }
