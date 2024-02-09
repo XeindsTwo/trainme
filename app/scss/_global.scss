@@ -28,6 +28,10 @@
   @include r($phone) {
     padding: 0 15px;
   }
+
+  &--footer {
+    max-width: 1432px;
+  }
 }
 
 .indent {

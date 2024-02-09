@@ -1,8 +1,11 @@
 .footer {
   @include bg;
+  position: relative;
   padding: 64px 0;
   background-image: url("../images/hero-footer.png");
   box-shadow: 0 40px 186px 0 rgba(23, 43, 27, 0.13);
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
 
   &__contacts {
     display: grid;
@@ -10,6 +13,8 @@
     gap: 11px;
     max-width: 611px;
     margin: 0 auto 52px;
+    position: relative;
+    z-index: 20;
   }
 
   &__contact {
@@ -19,6 +24,8 @@
     @include flex-column();
     align-items: center;
     text-align: center;
+    position: relative;
+    z-index: 3;
   }
 
   &__answer {
@@ -75,4 +82,65 @@
       opacity: .5;
     }
   }
+
+  &__images {
+    top: 0;
+    position: absolute;
+    z-index: 0;
+  }
+
+  &__img {
+    @include objectCoverBg;
+    position: relative;
+    border-radius: 12px;
+
+    &--one {
+      top: -133px;
+    }
+
+    &--two {
+      left: 96px;
+    }
+
+    &--three {
+      position: absolute;
+      right: -100px;
+      top: -110px;
+    }
+
+    &--four {
+      position: absolute;
+      right: -92px;
+      bottom: 54px;
+      z-index: 0;
+    }
+
+    &--five {
+      left: 240px;
+      top: 76px;
+    }
+
+    &--six {
+      position: absolute;
+      right: 70px;
+      transform: translateY(90px);
+      width: 196px;
+      z-index: 20;
+      @media (max-width: 1520px) {
+        right: 58px;
+      }
+      @media(max-width: 1440px) {
+        right: 46px;
+      }
+    }
+  }
+
+  &__right {
+    position: absolute;
+  }
+}
+
+.images__footer {
+  position: absolute;
+  z-index: 300;
 }
