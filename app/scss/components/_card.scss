@@ -31,6 +31,21 @@
 
   &--high {
     min-height: 600px;
+    @include r($desktop) {
+      min-height: 560px;
+    }
+    @media (max-width: 1100px) {
+      min-height: 540px;
+    }
+    @include r($lg) {
+      min-height: 460px;
+    }
+    @media (max-width: 830px) {
+      min-height: 420px;
+    }
+    @media (max-width: 550px) {
+      min-height: 380px;
+    }
   }
 
   &__title {
