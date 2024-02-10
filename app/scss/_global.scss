@@ -35,12 +35,12 @@
 }
 
 .indent {
-  margin-top: 152px;
+  margin-top: 172px;
   @include r($desktop) {
-    margin-top: 120px;
+    margin-top: 140px;
   }
   @include r($lg) {
-    margin-top: 100px;
+    margin-top: 110px;
   }
   @include r($sm) {
     margin-top: 85px;
