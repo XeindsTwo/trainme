@@ -17,7 +17,7 @@
 <body class="body">
 
 <main>
-  <header class="header" id="start">
+  <header class="header" id="home">
   <div class="header__container container">
     <div class="header__top">
       <a class="logo" href="/">
@@ -26,25 +26,26 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li>
-            <a class="header__link" href="">Home</a>
+            <a class="header__link" href="#about">About</a>
           </li>
           <li>
-            <a class="header__link" href="">About</a>
+            <a class="header__link" href="#features">Features</a>
           </li>
           <li>
-            <a class="header__link" href="">Features</a>
+            <a class="header__link" href="#testimonials">Testimonials</a>
           </li>
           <li>
-            <a class="header__link" href="">Testimonials</a>
+            <a class="header__link" href="#beta">Closed Beta</a>
           </li>
           <li>
-            <a class="header__link" href="">Closed Beta</a>
-          </li>
-          <li>
-            <a class="header__link" href="">Contact</a>
+            <a class="header__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
+      <button class="menu-btn">
+        <span class="menu-btn__line"></span>
+        <span class="sr-only">Interact with menu</span>
+      </button>
     </div>
     <div class="header__text">
       <h1 class="header__title">
@@ -57,7 +58,7 @@
       </p>
     </div>
     <div class="header__info">
-      <button class="header__more btn" type="button">Learn More</button>
+      <a class="header__more btn" href="#about">Learn More</a>
       <p>
         Get ready to experience personalized workouts,
         real-time guidance, and a smarter approach to achieving your goal.
@@ -70,6 +71,25 @@
       <img class="header__img header__img--three" src="images/parallax/3.png" alt="fitness people" width="310" height="339">
     </div>
   </div>
+  <nav class="header__mobile">
+    <ul class="header__mobile-list">
+      <li>
+        <a class="header__link" href="#about">About</a>
+      </li>
+      <li>
+        <a class="header__link" href="#features">Features</a>
+      </li>
+      <li>
+        <a class="header__link" href="#testimonials">Testimonials</a>
+      </li>
+      <li>
+        <a class="header__link" href="#beta">Closed Beta</a>
+      </li>
+      <li>
+        <a class="header__link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <div class="images__header container">
   <div class="header__decor">
@@ -78,7 +98,7 @@
     <img class="header__img header__img--five" src="images/parallax/5.png" alt="fitness people" width="196" height="264">
   </div>
 </div>
-  <section class="innovation indent" id="innovation">
+  <section class="innovation indent" id="about">
   <div class="container">
     <h2 class="innovation__title title title--center">
       Discover the innovation behind TrainMe AI.
@@ -124,7 +144,7 @@
           </h3>
           <img class="card__icon" src="images/icons/free.png" alt="free decor" width="40" height="40">
           <div class="card__action">
-            <button class="btn" type="button">Get Started</button>
+            <a class="btn" href="#contact">Get Started</a>
             <p class="card__text card__text--azure">
               Start Your Fitness Journey with TrainMe AI
             </p>
@@ -161,7 +181,7 @@
           See All Features
         </h3>
         <img src="images/icons/free.png" alt="free decor" width="40" height="40">
-        <button class="btn btn--gray" type="button">Get Started</button>
+        <a class="btn btn--gray" href="#contact">Get Started</a>
       </li>
     </ul>
   </div>
@@ -329,7 +349,7 @@
   </div>
   <img class="footer__img footer__img--six" src="images/parallax/5.png" alt="fitness people" width="196" height="264">
 </div>
-<footer class="footer indent" id="footer">
+<footer class="footer indent" id="contact">
   <div class="container container--footer">
     <div class="footer__contacts">
       <div class="footer__contact">
@@ -343,7 +363,7 @@
           The AI-powered workouts are challenging yet achievable, and the virtual coach
           provides valuable insights to help me improve my form and technique.
         </p>
-        <button class="btn btn--gray" type="button">Contact Us</button>
+        <a class="btn btn--gray" href="https://twitter.com/TrainMeAI" target="_blank">Contact Us</a>
       </div>
       <div class="footer__contact">
         <div class="footer__answer">
@@ -356,7 +376,7 @@
           Stay connected with TrainMe AI on social media for updates, workout inspiration, and community engagement.
           Join the conversation and share your fitness journey!
         </p>
-        <button class="btn btn--gray" type="button">Follow Us</button>
+        <a class="btn btn--gray" href="https://twitter.com/TrainMeAI" target="_blank">Follow Us</a>
       </div>
       <img class="footer__img footer__img--three" src="images/parallax/4.png" alt="fitness people" width="133" height="165">
       <img class="footer__img footer__img--four" src="images/parallax/6.png" alt="fitness people" width="103" height="154">
@@ -368,22 +388,19 @@
       <nav class="footer__nav">
         <ul class="footer__list">
           <li>
-            <a class="footer__link" href="">Home</a>
+            <a class="footer__link" href="#home">Home</a>
           </li>
           <li>
-            <a class="footer__link" href="">About</a>
+            <a class="footer__link" href="#about">About</a>
           </li>
           <li>
-            <a class="footer__link" href="">Features</a>
+            <a class="footer__link" href="#features">Features</a>
           </li>
           <li>
-            <a class="footer__link" href="">Testimonials</a>
+            <a class="footer__link" href="#testimonials">Testimonials</a>
           </li>
           <li>
-            <a class="footer__link" href="">Closed Beta</a>
-          </li>
-          <li>
-            <a class="footer__link" href="">Contact</a>
+            <a class="footer__link" href="#beta">Closed Beta</a>
           </li>
         </ul>
       </nav>

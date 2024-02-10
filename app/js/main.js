@@ -1,4 +1,4 @@
-/*const body = document.body;
+const body = document.body;
 const menuBtn = document.querySelector('.menu-btn');
 const header = document.querySelector('.header__mobile');
 const anchors = document.querySelectorAll('a[href*="#"]');
@@ -18,7 +18,12 @@ function scrollToTarget(targetId) {
     header.classList.remove('active');
     menuBtn.classList.remove('active');
     setTimeout(() => {
-      const targetOffset = targetSection.offsetTop;
+      let targetOffset;
+      if (targetId.includes('#testimonials')) {
+        targetOffset = targetSection.offsetTop;
+      } else {
+        targetOffset = targetSection.offsetTop - 30;
+      }
       window.scrollTo({top: targetOffset, behavior: 'smooth'});
     }, 400);
   }
@@ -39,7 +44,7 @@ const menuLinks = document.querySelectorAll('.header__link');
 menuLinks.forEach((menuLink) => {
   menuLink.addEventListener('click', handleAnchorClick);
   menuLink.addEventListener('touchstart', handleAnchorClick, {passive: true});
-});*/
+});
 
 const testimonialsBtn = document.getElementById('testimonials-btn');
 const testimonialsOverlay = document.querySelector('.testimonials__overlay');

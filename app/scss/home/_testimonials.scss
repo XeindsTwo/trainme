@@ -9,13 +9,7 @@
     padding: 47px 0;
   }
   @include r($tablet) {
-    padding-top: 38px;
-  }
-  @include r($sm) {
-    padding-bottom: 40px;
-  }
-  @media (max-width: 420px) {
-    padding-top: 34px;
+    padding: 40px 0;
   }
 
   .title {
