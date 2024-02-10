@@ -6,6 +6,21 @@
   box-shadow: 0 40px 186px 0 rgba(23, 43, 27, 0.13);
   overflow: hidden;
   border-radius: 16px 16px 0 0;
+  @media (max-width: 1400px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 1300px) {
+    padding-bottom: 44px;
+  }
+  @media (max-width: 1240px) {
+    padding-bottom: 38px;
+  }
+  @media (max-width: 1100px) {
+    padding-bottom: 32px;
+  }
+  @include r($tablet) {
+    padding: 52px 0 24px;
+  }
 
   &__contacts {
     display: grid;
@@ -15,6 +30,18 @@
     margin: 0 auto 52px;
     position: relative;
     z-index: 20;
+    @include r($lg) {
+      gap: 10px;
+    }
+    @media (max-width: 870px) {
+      max-width: 590px;
+    }
+    @include r($tablet) {
+      max-width: 560px;
+    }
+    @media (max-width: 520px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__contact {
@@ -26,12 +53,21 @@
     text-align: center;
     position: relative;
     z-index: 3;
+    @media (max-width: 870px) {
+      padding: 20px;
+    }
+    @include r($phone) {
+      border-radius: 12px;
+    }
   }
 
   &__answer {
     @include flex-column();
     align-items: center;
     margin-bottom: 32px;
+    @include r($lg) {
+      margin-bottom: 24px;
+    }
   }
 
   &__icon {
@@ -45,20 +81,42 @@
 
   &__text {
     margin-bottom: 32px;
+    @include r($lg) {
+      margin-bottom: 28px;
+    }
   }
 
-  .title {
+  &__title {
     margin-bottom: 24px;
+    @include r($lg) {
+      font-size: 28px;
+    }
   }
 
   &__bottom {
     @include flex-between-center-gap(30);
     padding-bottom: 20px;
     border-bottom: 1px solid rgba($white, .3);
+    @include r($tablet) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    @media (max-width: 575px) {
+      align-items: flex-start;
+      gap: 26px;
+    }
   }
 
   &__list {
     @include flex-between-center-gap(8);
+    @include r($tablet) {
+      gap: 13px;
+    }
+    @media (max-width: 575px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 18px;
+    }
   }
 
   &__link {
@@ -72,6 +130,11 @@
     border-radius: 40px;
     color: $white;
     transition: color .4s, background-color .4s, opacity .4s;
+    @include r($tablet) {
+      font-size: 16px;
+      letter-spacing: 0;
+      padding: 6px 11px;
+    }
 
     &:hover {
       background-color: $white;
@@ -87,6 +150,9 @@
     top: 0;
     position: absolute;
     z-index: 0;
+    @media (max-width: 1310px) {
+      top: 240px;
+    }
   }
 
   &__img {
@@ -96,17 +162,52 @@
 
     &--one {
       top: -133px;
+      @media (max-width: 1390px) {
+        width: auto;
+        height: 280px;
+      }
+      @media (max-width: 1310px) {
+        display: none;
+      }
     }
 
     &--two {
       left: 96px;
       top: -59px;
+      @media (max-width: 1390px) {
+        top: -30px;
+      }
+      @media (max-width: 1300px) {
+        left: 60px;
+      }
+      @include r($desktop) {
+        top: 0;
+        left: 30px;
+      }
+      @media (max-width: 1100px) {
+        width: auto;
+        height: 144px;
+        left: 23px;
+      }
+      @media (max-width: 1040px) {
+        left: 5px;
+      }
+      @include r($lg) {
+        display: none;
+      }
     }
 
     &--three {
       position: absolute;
       right: -100px;
       top: -110px;
+      @media (max-width: 1300px) {
+        right: -65px;
+        top: -105px;
+      }
+      @include r($desktop) {
+        display: none;
+      }
     }
 
     &--four {
@@ -114,11 +215,56 @@
       right: -92px;
       bottom: 54px;
       z-index: 0;
+      @media (max-width: 1300px) {
+        right: -96px;
+      }
+      @media (max-width: 945px) {
+        bottom: 30px;
+        right: -70px;
+      }
+      @media (max-width: 730px) {
+        display: none;
+      }
     }
 
     &--five {
       left: 240px;
       top: 76px;
+      @media (max-width: 1310px) {
+        left: 180px;
+        top: 90px;
+      }
+      @include r($desktop) {
+        left: 140px;
+      }
+      @media (max-width: 1100px) {
+        left: 110px;
+      }
+      @media (max-width: 1080px) {
+        left: 80px;
+      }
+      @include r($lg) {
+        left: 40px;
+        top: 70px;
+      }
+      @media (max-width: 945px) {
+        left: 20px;
+      }
+      @media (max-width: 870px) {
+        width: auto;
+        height: 167px;
+      }
+      @media (max-width: 820px) {
+        height: 162px;
+        top: 50px;
+      }
+      @media (max-width: 730px) {
+        top: 40px;
+        left: 5px;
+      }
+      @media (max-width: 670px) {
+        display: none;
+      }
     }
 
     &--six {
@@ -132,6 +278,34 @@
       }
       @media(max-width: 1440px) {
         right: 46px;
+        width: auto;
+        height: 244px;
+      }
+      @media (max-width: 1360px) {
+        right: 30px;
+        height: 230px;
+      }
+      @media (max-width: 1260px) {
+        height: 210px;
+        transform: translateY(130px);
+      }
+      @include r($desktop) {
+        transform: translateY(110px);
+      }
+      @media (max-width: 1080px) {
+        height: 200px;
+        transform: translateY(120px);
+        right: -9px;
+      }
+      @media (max-width: 945px) {
+        right: -30px;
+        transform: translateY(130px);
+      }
+      @media (max-width: 890px) {
+        height: 185px;
+      }
+      @media (max-width: 870px) {
+        display: none;
       }
     }
   }
